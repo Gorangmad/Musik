@@ -187,6 +187,7 @@ section .title::after{
 .home .home-content img{
     width: 1200px;
     height: 750px;
+    align-items: center;
 
 }
 .home .home-content .text-3{
