@@ -215,7 +215,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "Was wir anbieten";
+    content: "Leistungen";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -348,7 +348,7 @@ section .title::after{
 
 /* contact section styling */
 .contact .title::after{
-    content: "Kontaktieren sie uns jetzt";
+    content: "Kontakt";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -500,11 +500,10 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-3{
-        font-size: 35px;
+    .home .home-content img{
+        width: 700px;
+        height: 700px;
+    
     }
     .home .home-content a{
         font-size: 23px;
@@ -536,17 +535,41 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
+    
+    .layer h3 a{
+        width: 80%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 26px;
+        bottom: 0;
+        left: 70%;
+        transform: translateX(-50%);
+        position: absolute;
+        /* opacity: 0;
+        transition: 0.5s;   */
+    }
+    
+    .layer1 h3 a{
+        width: 80%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 26px;
+        bottom: 0;
+        left: 80%;
+        transform: translateX(-50%);
+        position: absolute; 
+        /* opacity: 0;
+        transition: 0.5s; */
+    
+    }
+    
     .max-width{
         padding: 0 23px;
     }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
+    .home .home-content img{
+        width: 400px;
+        height: 600px;
+    
     }
     .services .serv-content .card{
         width: 100%;
@@ -554,6 +577,15 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    .about .layer h3 a{
+        font-size: 16px;
+    }
+    
+    .about .layer1 h3 a{
+        font-size: 16px;
+    
+    }
+    
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -717,18 +749,18 @@ justify-content: center;
     transform: translateX(-50%);
     position: absolute;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.5s;  
 }
 
 .layer1 h3 a{
-    width: 100%;
+    width: 80%;
     font-weight: 500;
     color: #fff;
     font-size: 26px;
     bottom: 0;
     left: 80%;
     transform: translateX(-50%);
-    position: absolute;
+    position: absolute; 
     opacity: 0;
     transition: 0.5s;
 
